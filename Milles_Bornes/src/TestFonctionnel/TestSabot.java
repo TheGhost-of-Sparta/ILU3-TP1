@@ -8,12 +8,12 @@ import cartes.DebutLimite;
 import cartes.FinLimite;
 import cartes.Parade;
 import cartes.Type;
-import jeu.Sabot;
+import jeu.ZoneDeJeu;
 
 public class TestZoneDeJeu {
 	public static void main(String[] args) {
 		//PARTIE 2
-		Sabot zoneDeJeu = new Sabot();
+		ZoneDeJeu zoneDeJeu = new ZoneDeJeu();
 		System.out.println("Deposer carte 25 km");
 		zoneDeJeu.deposer(new Borne(25));
 		System.out.println("Deposer carte 50 km");

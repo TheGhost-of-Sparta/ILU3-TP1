@@ -23,13 +23,15 @@ public class Sabot implements Iterable<Carte>{
 			tableau[nbCartes]= carte;
 			nbCartes++;
 			nombreOperations++;
+		}else {
+			throw new IllegalStateException();
 		}
 	}
 	
 	public Carte piocher() {
-		Iterator<Carte> Iterateur = iterator();
-		Carte carte =Iterateur.next();
-		Iterateur.remove();
+		Iterator<Carte> iterateur = iterator();
+		Carte carte =iterateur.next();
+		iterateur.remove();
 		return carte;
 	}
 	
